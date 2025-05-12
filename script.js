@@ -11,8 +11,8 @@ function checkPassword() {
         localStorage.setItem('oneTimePasswordComplete', 'true');
         
         // Set authentication in session storage with timestamp
-        sessionStorage.setItem('authenticated', 'true');
-        sessionStorage.setItem('authTimestamp', Date.now().toString());
+        sessionStorage.setItem('authenticated1', 'true');
+        sessionStorage.setItem('authTimestamp1', Date.now().toString());
         
         // Show page transition
         const transition = document.querySelector('.page-transition');
@@ -44,21 +44,21 @@ function checkPassword() {
 // Function to verify authentication
 function verifyAuth() {
     const oneTimePasswordComplete = localStorage.getItem('oneTimePasswordComplete');
-    const authenticated = sessionStorage.getItem('authenticated');
-    const authTimestamp = sessionStorage.getItem('authTimestamp');
+    const authenticated = sessionStorage.getItem('authenticated1');
+    const authTimestamp = sessionStorage.getItem('authTimestamp1');
     const currentTime = Date.now();
     
     // If one-time password is complete, always allow access
     if (oneTimePasswordComplete === 'true') {
         // Ensure session storage is set
-        sessionStorage.setItem('authenticated', 'true');
-        sessionStorage.setItem('authTimestamp', Date.now().toString());
+        sessionStorage.setItem('authenticated1', 'true');
+        sessionStorage.setItem('authTimestamp1', Date.now().toString());
         return true;
     }
     
     // Clear session storage only
-    sessionStorage.removeItem('authenticated');
-    sessionStorage.removeItem('authTimestamp');
+    sessionStorage.removeItem('authenticated1');
+    sessionStorage.removeItem('authTimestamp1');
     window.location.replace("index.html");
     return false;
 }
