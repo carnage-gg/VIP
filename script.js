@@ -8,8 +8,8 @@ function checkPassword() {
     
     if (password === correctPassword) {
         // Set authentication in session storage with timestamp
-        sessionStorage.setItem('authenticated', 'true');
-        sessionStorage.setItem('authTimestamp', Date.now().toString());
+        sessionStorage.setItem('authenticated1', 'true');
+        sessionStorage.setItem('authTimestamp1', Date.now().toString());
         
         // Show page transition
         const transition = document.querySelector('.page-transition');
@@ -40,14 +40,14 @@ function checkPassword() {
 
 // Function to verify authentication
 function verifyAuth() {
-    const authenticated = sessionStorage.getItem('authenticated');
-    const authTimestamp = sessionStorage.getItem('authTimestamp');
+    const authenticated = sessionStorage.getItem('authenticated1');
+    const authTimestamp = sessionStorage.getItem('authTimestamp1');
     const currentTime = Date.now();
     
     // Check if authentication exists and is not expired (30 minute session)
     if (!authenticated || !authTimestamp || currentTime - parseInt(authTimestamp) > 1800000) {
-        sessionStorage.removeItem('authenticated');
-        sessionStorage.removeItem('authTimestamp');
+        sessionStorage.removeItem('authenticated1');
+        sessionStorage.removeItem('authTimestamp1');
         window.location.replace("index.html");
         return false;
     }
