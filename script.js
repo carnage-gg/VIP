@@ -95,14 +95,14 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded');
     
     // Check if one-time password is complete and redirect from index page
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('VIP') || window.location.pathname === '/') {
         if (localStorage.getItem('oneTimePasswordComplete') === 'true') {
             window.location.replace('home.html');
             return;
         }
     }
     
-    // Check authentication for protected pages
+    // Check authentication for protected pages 
     const protectedPages = ['home.html', 'games.html', 'music.html', 'about.html', 'system.html', 'settings.html'];
     const currentPath = window.location.pathname;
     
