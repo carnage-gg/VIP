@@ -8,7 +8,7 @@ function checkPassword() {
     
     if (password === correctPassword) {
         // Store one-time password completion in localStorage permanently
-        localStorage.setItem('oneTimePasswordComplete', 'true');
+        localStorage.setItem('VIP_SI', 'true');
         
         // Set authentication in session storage with timestamp
         sessionStorage.setItem('authenticated1', 'true');
@@ -43,7 +43,7 @@ function checkPassword() {
 
 // Function to verify authentication
 function verifyAuth() {
-    const oneTimePasswordComplete = localStorage.getItem('oneTimePasswordComplete');
+    const oneTimePasswordComplete = localStorage.getItem('VIP_SI');
     const authenticated = sessionStorage.getItem('authenticated1');
     const authTimestamp = sessionStorage.getItem('authTimestamp1');
     const currentTime = Date.now();
