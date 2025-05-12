@@ -7,9 +7,12 @@ function checkPassword() {
     const correctPassword = "erytbreyt3498nt9[34t394r734b9t69b354tcb6t34p96t2p3bt034827tb0356t98698465e98t639257y98t479854btb9845t98nb39b";
     
     if (password === correctPassword) {
+        // Store one-time password completion in localStorage permanently
+        localStorage.setItem('oneTimePasswordComplete', 'true');
+        
         // Set authentication in session storage with timestamp
-        sessionStorage.setItem('authenticated1', 'true');
-        sessionStorage.setItem('authTimestamp1', Date.now().toString());
+        sessionStorage.setItem('authenticated', 'true');
+        sessionStorage.setItem('authTimestamp', Date.now().toString());
         
         // Show page transition
         const transition = document.querySelector('.page-transition');
@@ -40,19 +43,98 @@ function checkPassword() {
 
 // Function to verify authentication
 function verifyAuth() {
-    const authenticated = sessionStorage.getItem('authenticated1');
-    const authTimestamp = sessionStorage.getItem('authTimestamp1');
+    const oneTimePasswordComplete = localStorage.getItem('oneTimePasswordComplete');
+    const authenticated = sessionStorage.getItem('authenticated');
+    const authTimestamp = sessionStorage.getItem('authTimestamp');
     const currentTime = Date.now();
     
-    // Check if authentication exists and is not expired (30 minute session)
-    if (!authenticated || !authTimestamp || currentTime - parseInt(authTimestamp) > 1800000) {
-        sessionStorage.removeItem('authenticated1');
-        sessionStorage.removeItem('authTimestamp1');
-        window.location.replace("index.html");
-        return false;
+    // If one-time password is complete, always allow access
+    if (oneTimePasswordComplete === 'true') {
+        // Ensure session storage is set
+        sessionStorage.setItem('authenticated', 'true');
+        sessionStorage.setItem('authTimestamp', Date.now().toString());
+        return true;
     }
-    return true;
+    
+    // Clear session storage only
+    sessionStorage.removeItem('authenticated');
+    sessionStorage.removeItem('authTimestamp');
+    window.location.replace("index.html");
+    return false;
 }
+
+// Function to open games in a new tab with CodeX Game title
+function openGame(gameUrl) {
+    // Open the game URL directly in a new tab
+    window.open(gameUrl, '_blank');
+}
+
+// Add the music search functionality
+function searchMusic(query) {
+    // If no query is provided, get it from the input field
+    if (!query) {
+        query = document.getElementById('music-search-input').value.trim();
+        
+        // If input is empty, show alert and return
+        if (!query) {
+            alert('Please enter a search term');
+            return;
+        }
+    }
+    
+    // Properly encode the search query
+    const encodedQuery = encodeURIComponent(query);
+    const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${encodedQuery}`;
+    
+    // Open YouTube search in a new tab
+    window.open(youtubeSearchUrl, '_blank');
+}
+
+// Initialize event listeners when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded');
+    
+    // Check if one-time password is complete and redirect from index page
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
+        if (localStorage.getItem('oneTimePasswordComplete') === 'true') {
+            window.location.replace('home.html');
+            return;
+        }
+    }
+    
+    // Check authentication for protected pages
+    const protectedPages = ['home.html', 'games.html', 'music.html', 'about.html', 'system.html', 'settings.html'];
+    const currentPath = window.location.pathname;
+    
+    // Check if current page is a protected page
+    if (protectedPages.some(page => currentPath.endsWith(page) || currentPath.includes(page.replace('.html', '')))) {
+        if (!verifyAuth()) {
+            return;
+        }
+        // Refresh auth timestamp on activity
+        sessionStorage.setItem('authTimestamp', Date.now().toString());
+    }
+    
+    // Apply saved settings to all pages
+    applySavedSettings();
+    
+    // Add animation class to body
+    document.body.classList.add('loaded');
+    
+    // Handle password input
+    const passwordInput = document.getElementById('password');
+    if (passwordInput) {
+        console.log('Password input found');
+        passwordInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+        
+        // Auto-focus the password input
+        passwordInput.focus();
+    }
+});
 
 // Function to open games in a new tab with CodeX Game title
 function openGame(gameUrl) {
