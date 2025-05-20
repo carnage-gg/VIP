@@ -7,9 +7,6 @@ Codex is a gaming website where you can play unblocked games without disruptions
 
 The password to enter is: codex123
 
-## Cloning
-
-To clone CodeX:
 
 ```bash
   git clone https://github.com/Play-CodeX/play-codex.github.io
