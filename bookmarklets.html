@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeX - Bookmarklets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo.svg">
+    <script src="user-check.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="CodeX Logo">
+            <h1>CodeX</h1>
+        </div>
+            
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="games.html"><i class="fas fa-gamepad"></i> Games</a></li>
+                <li><a href="bookmarklets.html" class="active"><i class="fas fa-bookmark"></i> Bookmarklets</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Music</a></li>
+                <li><a href="system.html"><i class="fas fa-microchip"></i> System</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <!-- Compact title and search bar -->
+        <div class="system-container">
+            <div class="system-header">
+                <h2 class="system-title"><i class="fas fa-bookmark"></i> Bookmarklets</h2>
+            </div>
+          </div>
+          <section class="content">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="game-search" placeholder="Search for bookmarklets...">
+                        <button id="clear-search" class="clear-search-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <p>Browse our extensive collection of bookmarklets. Click "Open Now" to launch any bookmarklet in a new tab.</p>
+            </section>
+        <!-- Cards section - moved to the very top -->
+        <section class="games-grid">
+            <div class="game-card">
+                <h3>3D</h3>
+                <button onclick="openGame('bookmarklets/3d.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Autoclicker</h3>
+                <button onclick="openGame('bookmarklets/autoclicker.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Calculater</h3>
+                <button onclick="openGame('bookmarklets/calculater.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Cloak</h3>
+                <button onclick="openGame('bookmarklets/cloak.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Colorblind</h3>
+                <button onclick="openGame('bookmarklets/colorblind.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Disco</h3>
+                <button onclick="openGame('bookmarklets/disco.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Explosion</h3>
+                <button onclick="openGame('bookmarklets/explosion.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Facemask</h3>
+                <button onclick="openGame('bookmarklets/facemask.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Glitch</h3>
+                <button onclick="openGame('bookmarklets/glitch.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Gravity</h3>
+                <button onclick="openGame('bookmarklets/gravity.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>History-replacer</h3>
+                <button onclick="openGame('bookmarklets/history-replacer.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Matrix</h3>
+                <button onclick="openGame('bookmarklets/matrix.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Music</h3>
+                <button onclick="openGame('bookmarklets/music.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Rock-Paper-Scissors</h3>
+                <button onclick="openGame('bookmarklets/rockpaperscissors.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Tools</h3>
+                <button onclick="openGame('bookmarklets/tools.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>Uglify</h3>
+                <button onclick="openGame('bookmarklets/uglify.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+            <div class="game-card">
+                <h3>X-ray</h3>
+                <button onclick="openGame('bookmarklets/x-ray.txt')">
+                    <i class="fas fa-copy"></i> Open Now
+                </button>
+            </div>
+
+        </section>
+
+        <div class="no-results">No bookmarklets found matching your search.</div>
+        
+        <!-- Instructions section - moved down -->
+        <section class="content instructions-section">
+            <p>Browse our collection of useful bookmarklets. Click "Add Bookmark" to create a bookmark with the JavaScript code. Drag the button to your bookmarks bar for easy access. Use these tools to enhance your browsing experience.</p>
+            <div class="bookmarklet-instructions">
+                <h3><i class="fas fa-info-circle"></i> How to use bookmarklets:</h3>
+                <ol>
+                    <li>Make sure your bookmarks/favorites bar is visible in your browser</li>
+                    <li>Click the "Add Bookmark" button for the bookmarklet you want</li>
+                    <li>Drag the created bookmark to your bookmarks bar</li>
+                    <li>When you want to use the bookmarklet, simply click it while on any webpage</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+       
+    <footer>
+        <p>© 2023 CodeX Tools. All rights reserved. <i class="fas fa-code"></i> with <i class="fas fa-heart" style="color: var(--primary);"></i></p>
+    </footer>
+       
+    <div class="page-transition"></div>
+       
+    <script src="script.js"></script>
+ 
+</body>
+</html>
