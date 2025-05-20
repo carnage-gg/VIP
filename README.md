@@ -14,10 +14,6 @@ The password to enter is: codex123
 Then you need to look in your user files to get the clone.
 
 
-## Copyright
-
-You are allowed to clone the website but legally you need to give credits to me.
-
 ## License
 
 MIT License
