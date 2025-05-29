@@ -1,1 +1,494 @@
-const _0x2d60ed=_0x25e9;(function(_0x385f0f,_0x10817b){const _0x46c97f=_0x25e9,_0x402937=_0x385f0f();while(!![]){try{const _0x4ec668=-parseInt(_0x46c97f(0x1eb))/0x1+parseInt(_0x46c97f(0x24b))/0x2+-parseInt(_0x46c97f(0x1f1))/0x3*(parseInt(_0x46c97f(0x1e7))/0x4)+parseInt(_0x46c97f(0x1f0))/0x5+-parseInt(_0x46c97f(0x1cc))/0x6*(parseInt(_0x46c97f(0x1c9))/0x7)+-parseInt(_0x46c97f(0x22c))/0x8*(parseInt(_0x46c97f(0x250))/0x9)+-parseInt(_0x46c97f(0x1ee))/0xa*(-parseInt(_0x46c97f(0x25f))/0xb);if(_0x4ec668===_0x10817b)break;else _0x402937['push'](_0x402937['shift']());}catch(_0x8246c7){_0x402937['push'](_0x402937['shift']());}}}(_0x5231,0xab3c1));function checkPassword(){const _0x45e88f=_0x25e9,_0x8bc8af=document[_0x45e88f(0x22b)](_0x45e88f(0x218))[_0x45e88f(0x22e)],_0x48371a=document['getElementById'](_0x45e88f(0x1ce)),_0x300e80='rcffcjiieufgoe87rgy4g53tm34t34mt3ger8t8entc458yctn834tc84257yntm735tt8734mrt8734utyn457838tru45yrne8tiu54yr8rucgnyireiunygeryt98erygc9e8nrgierygnroegynreignergnoieruigynceriucgyercgueyrgiueramgciyn87eryg8egn8tecgemtre8cgn8e7rye8rtyner';if(_0x8bc8af===_0x300e80){localStorage[_0x45e88f(0x1fc)](_0x45e88f(0x1fe),_0x45e88f(0x23e)),sessionStorage[_0x45e88f(0x1fc)](_0x45e88f(0x1ec),'true'),sessionStorage[_0x45e88f(0x1fc)]('authTimestamp',Date[_0x45e88f(0x203)]()[_0x45e88f(0x1db)]());const _0x5dd738=document[_0x45e88f(0x1ca)](_0x45e88f(0x24d));_0x5dd738[_0x45e88f(0x215)][_0x45e88f(0x20e)](_0x45e88f(0x222)),setTimeout(()=>{const _0x2ed555=_0x45e88f;window[_0x2ed555(0x1e9)][_0x2ed555(0x22d)]=_0x2ed555(0x1cb);},0x1f4);}else{_0x48371a[_0x45e88f(0x249)]=_0x45e88f(0x1f9);const _0x4ee364=document[_0x45e88f(0x22b)](_0x45e88f(0x218));_0x4ee364['classList'][_0x45e88f(0x20e)](_0x45e88f(0x1ff)),setTimeout(()=>{const _0x535dcb=_0x45e88f;_0x4ee364['classList'][_0x535dcb(0x23a)]('shake');},0x1f4),setTimeout(()=>{_0x48371a['textContent']='';},0xbb8);}}function verifyAuth(){const _0x2a534f=_0x25e9,_0x36acc8=localStorage[_0x2a534f(0x224)](_0x2a534f(0x1fe)),_0x4856b6=sessionStorage['getItem']('authenticated'),_0x5142ea=sessionStorage[_0x2a534f(0x224)](_0x2a534f(0x1d7)),_0x130619=Date['now']();if(_0x36acc8===_0x2a534f(0x23e))return sessionStorage[_0x2a534f(0x1fc)]('authenticated','true'),sessionStorage[_0x2a534f(0x1fc)]('authTimestamp',Date[_0x2a534f(0x203)]()['toString']()),!![];return sessionStorage[_0x2a534f(0x219)](_0x2a534f(0x1ec)),sessionStorage[_0x2a534f(0x219)]('authTimestamp'),window[_0x2a534f(0x1e9)][_0x2a534f(0x263)](_0x2a534f(0x239)),![];}function openGame(_0xb4a72a){const _0x4cdfb8=_0x25e9;window[_0x4cdfb8(0x1c8)](_0xb4a72a,_0x4cdfb8(0x1ea));}function searchMusic(_0x2f521d){const _0x53c257=_0x25e9;if(!_0x2f521d){_0x2f521d=document[_0x53c257(0x22b)](_0x53c257(0x248))[_0x53c257(0x22e)][_0x53c257(0x21a)]();if(!_0x2f521d){alert(_0x53c257(0x1ed));return;}}const _0x110b86=encodeURIComponent(_0x2f521d),_0x1035b1=_0x53c257(0x20c)+_0x110b86;window[_0x53c257(0x1c8)](_0x1035b1,_0x53c257(0x1ea));}document[_0x2d60ed(0x226)](_0x2d60ed(0x265),function(){const _0x174337=_0x2d60ed;console[_0x174337(0x259)]('DOM\x20fully\x20loaded');if(window[_0x174337(0x1e9)][_0x174337(0x202)][_0x174337(0x1fa)]('index.html')||window[_0x174337(0x1e9)]['pathname']==='/'){if(localStorage[_0x174337(0x224)](_0x174337(0x1fe))==='true'){window['location'][_0x174337(0x263)](_0x174337(0x1cb));return;}}const _0x46ca4e=['home.html',_0x174337(0x204),_0x174337(0x1f3),_0x174337(0x25b),_0x174337(0x24f),'settings.html'],_0x27c334=window['location'][_0x174337(0x202)];if(_0x46ca4e[_0x174337(0x21d)](_0x2cebc1=>_0x27c334[_0x174337(0x1fa)](_0x2cebc1)||_0x27c334[_0x174337(0x1e0)](_0x2cebc1[_0x174337(0x263)](_0x174337(0x21b),'')))){if(!verifyAuth())return;sessionStorage['setItem'](_0x174337(0x1d7),Date[_0x174337(0x203)]()['toString']());}applySavedSettings(),document[_0x174337(0x20f)][_0x174337(0x215)][_0x174337(0x20e)](_0x174337(0x264));const _0x4a5328=document[_0x174337(0x22b)](_0x174337(0x218));_0x4a5328&&(console['log']('Password\x20input\x20found'),_0x4a5328['addEventListener'](_0x174337(0x1e8),function(_0x1cb0f0){const _0x417ac1=_0x174337;_0x1cb0f0['key']===_0x417ac1(0x1d8)&&checkPassword();}),_0x4a5328[_0x174337(0x227)]());});function openGame(_0x3be3af){const _0x2220c5=_0x2d60ed;window[_0x2220c5(0x1c8)](_0x3be3af,_0x2220c5(0x1ea));}function searchMusic(_0x4aff78){const _0xd8fd5e=_0x2d60ed;if(!_0x4aff78){_0x4aff78=document[_0xd8fd5e(0x22b)]('music-search-input')['value'][_0xd8fd5e(0x21a)]();if(!_0x4aff78){alert('Please\x20enter\x20a\x20search\x20term');return;}}const _0xc0fe0c=encodeURIComponent(_0x4aff78),_0x50e759=_0xd8fd5e(0x20c)+_0xc0fe0c;window[_0xd8fd5e(0x1c8)](_0x50e759,_0xd8fd5e(0x1ea));}document[_0x2d60ed(0x226)](_0x2d60ed(0x265),function(){const _0x1f2587=_0x2d60ed;console['log']('DOM\x20fully\x20loaded');const _0x299d6a=[_0x1f2587(0x1cb),_0x1f2587(0x204),_0x1f2587(0x1f3),_0x1f2587(0x25b),'system.html',_0x1f2587(0x1c3)],_0x3c4076=window['location'][_0x1f2587(0x202)];if(_0x299d6a[_0x1f2587(0x21d)](_0x8bac57=>_0x3c4076[_0x1f2587(0x1fa)](_0x8bac57)||_0x3c4076[_0x1f2587(0x1e0)](_0x8bac57[_0x1f2587(0x263)]('.html','')))){if(!verifyAuth())return;sessionStorage[_0x1f2587(0x1fc)](_0x1f2587(0x1d7),Date[_0x1f2587(0x203)]()['toString']());}applySavedSettings(),document['body']['classList']['add']('loaded');const _0x31b172=document['getElementById']('password');_0x31b172&&(console[_0x1f2587(0x259)](_0x1f2587(0x1c5)),_0x31b172[_0x1f2587(0x226)]('keypress',function(_0x4252b0){const _0x1e179a=_0x1f2587;_0x4252b0[_0x1e179a(0x247)]===_0x1e179a(0x1d8)&&checkPassword();}),_0x31b172[_0x1f2587(0x227)]());const _0x5b1d3f=document[_0x1f2587(0x22b)](_0x1f2587(0x1de)),_0x3ee9dc=document['getElementById']('music-search-input');_0x5b1d3f&&_0x3ee9dc&&(console['log'](_0x1f2587(0x25d)),_0x5b1d3f[_0x1f2587(0x226)](_0x1f2587(0x216),function(){const _0x214d72=_0x1f2587;console[_0x214d72(0x259)](_0x214d72(0x20a)),searchMusic();}),_0x3ee9dc[_0x1f2587(0x226)](_0x1f2587(0x1e8),function(_0x17b5cf){const _0x56975b=_0x1f2587;_0x17b5cf[_0x56975b(0x247)]===_0x56975b(0x1d8)&&(console[_0x56975b(0x259)](_0x56975b(0x210)),searchMusic());}));const _0x4b7362=document[_0x1f2587(0x262)](_0x1f2587(0x241));_0x4b7362['forEach'](_0x21b805=>{const _0x17da19=_0x1f2587;_0x21b805['addEventListener'](_0x17da19(0x216),function(_0x9572d2){const _0x1678d6=_0x17da19;_0x9572d2[_0x1678d6(0x235)]();const _0xb9219f=this['getAttribute'](_0x1678d6(0x22d)),_0x4593b8=document['querySelector']('.page-transition');if(!verifyAuth())return;_0x4593b8[_0x1678d6(0x215)][_0x1678d6(0x20e)](_0x1678d6(0x222)),setTimeout(()=>{const _0xfe8779=_0x1678d6;window[_0xfe8779(0x1e9)][_0xfe8779(0x22d)]=_0xb9219f;},0x1f4);});});const _0x4f15c9=function(){const _0x291a0a=_0x1f2587,_0x5b4d5e=document[_0x291a0a(0x262)](_0x291a0a(0x23d));_0x5b4d5e[_0x291a0a(0x1f5)](_0x63b896=>{const _0x217bc4=_0x291a0a,_0x1c4b89=_0x63b896[_0x217bc4(0x1bb)]()['top'],_0x5ad5c6=window[_0x217bc4(0x258)];_0x1c4b89<_0x5ad5c6-0x64&&_0x63b896[_0x217bc4(0x215)][_0x217bc4(0x20e)](_0x217bc4(0x1d0));});};window[_0x1f2587(0x226)](_0x1f2587(0x1c2),_0x4f15c9),_0x4f15c9();const _0x312315=document['querySelector'](_0x1f2587(0x244));_0x312315&&window[_0x1f2587(0x226)]('scroll',function(){const _0x124571=_0x1f2587,_0x43b5e5=window[_0x124571(0x1e5)];_0x312315[_0x124571(0x1c1)][_0x124571(0x254)]=_0x124571(0x1e3)+_0x43b5e5*0.4+'px)';});const _0x545376=document[_0x1f2587(0x262)](_0x1f2587(0x24e));_0x545376['forEach'](_0x2d11bb=>{const _0x1d681c=_0x1f2587;_0x2d11bb[_0x1d681c(0x226)](_0x1d681c(0x1f8),function(){const _0x55fa07=_0x1d681c;this[_0x55fa07(0x1c1)][_0x55fa07(0x254)]='translateY(-10px)',this[_0x55fa07(0x1c1)]['boxShadow']='0\x2015px\x2030px\x20rgba(0,\x200,\x200,\x200.7),\x200\x200\x2015px\x20rgba(255,\x200,\x2034,\x200.3)';}),_0x2d11bb[_0x1d681c(0x226)](_0x1d681c(0x232),function(){const _0x20a2ab=_0x1d681c;this['style']['transform']='',this[_0x20a2ab(0x1c1)][_0x20a2ab(0x256)]='';});});const _0x4331b2=document[_0x1f2587(0x262)](_0x1f2587(0x251));_0x4331b2['length']>0x0&&_0x4331b2[_0x1f2587(0x1f5)](_0x1daed2=>{const _0xdb1915=_0x1f2587;_0x1daed2['addEventListener']('mouseenter',function(){const _0x5416d5=_0x25e9;this[_0x5416d5(0x1c1)][_0x5416d5(0x254)]=_0x5416d5(0x21f),this[_0x5416d5(0x1c1)][_0x5416d5(0x256)]=_0x5416d5(0x240);}),_0x1daed2[_0xdb1915(0x226)]('mouseleave',function(){const _0x341bc7=_0xdb1915;this[_0x341bc7(0x1c1)][_0x341bc7(0x254)]='',this[_0x341bc7(0x1c1)][_0x341bc7(0x256)]='';});});const _0x5dd99a=document[_0x1f2587(0x262)]('.tag');_0x5dd99a[_0x1f2587(0x25a)]>0x0&&_0x5dd99a[_0x1f2587(0x1f5)](_0x479324=>{const _0x5e0b6f=_0x1f2587;_0x479324[_0x5e0b6f(0x226)](_0x5e0b6f(0x1f8),function(){const _0x1fbe96=_0x5e0b6f;this[_0x1fbe96(0x1c1)][_0x1fbe96(0x254)]=_0x1fbe96(0x24a),this[_0x1fbe96(0x1c1)][_0x1fbe96(0x256)]=_0x1fbe96(0x1be),this['style'][_0x1fbe96(0x1c0)]=_0x1fbe96(0x1bc);}),_0x479324[_0x5e0b6f(0x226)](_0x5e0b6f(0x232),function(){const _0x34ea5f=_0x5e0b6f;this['style'][_0x34ea5f(0x254)]='',this[_0x34ea5f(0x1c1)][_0x34ea5f(0x256)]='',this[_0x34ea5f(0x1c1)][_0x34ea5f(0x1c0)]='';}),_0x479324[_0x5e0b6f(0x226)]('click',function(){const _0x5768f2=_0x5e0b6f,_0x18f317=this['textContent'][_0x5768f2(0x21a)]();console[_0x5768f2(0x259)](_0x5768f2(0x1d5),_0x18f317),searchMusic(_0x18f317);});});const _0x592c17=document['querySelectorAll'](_0x1f2587(0x21e));_0x592c17['length']>0x0&&(console[_0x1f2587(0x259)](_0x1f2587(0x206),_0x592c17[_0x1f2587(0x25a)]),_0x592c17['forEach'](_0x178c26=>{const _0x5806f6=_0x1f2587;_0x178c26[_0x5806f6(0x226)](_0x5806f6(0x216),function(){const _0x5ddfab=_0x5806f6,_0xfbfdf5=this[_0x5ddfab(0x249)][_0x5ddfab(0x21a)]();console[_0x5ddfab(0x259)]('Music\x20tag\x20clicked:',_0xfbfdf5),searchMusic(_0xfbfdf5);});}));});function applySavedSettings(){const _0x4db00c=_0x2d60ed,_0x347272=localStorage[_0x4db00c(0x224)](_0x4db00c(0x230));if(_0x347272){const _0x495d64=JSON['parse'](_0x347272);document[_0x4db00c(0x1f4)]=_0x495d64[_0x4db00c(0x1c7)]||_0x4db00c(0x1d6);const _0x45f5d3=_0x495d64[_0x4db00c(0x1f2)]||_0x4db00c(0x20b),_0x4b4aed=document[_0x4db00c(0x262)]('link[rel=\x22icon\x22],\x20link[rel=\x22shortcut\x20icon\x22]');if(_0x4b4aed['length']>0x0)_0x4b4aed['forEach'](_0x415250=>{const _0x4666a1=_0x4db00c;_0x415250[_0x4666a1(0x22d)]=_0x45f5d3;});else{const _0x5f4249=document[_0x4db00c(0x207)](_0x4db00c(0x1e1));_0x5f4249[_0x4db00c(0x1fb)]=_0x4db00c(0x1f6),_0x5f4249[_0x4db00c(0x22d)]=_0x45f5d3,document['head']['appendChild'](_0x5f4249);}}}document['addEventListener']('DOMContentLoaded',function(){const _0x46cb81=_0x2d60ed,_0x5620bf=document[_0x46cb81(0x22b)](_0x46cb81(0x1bf));if(!_0x5620bf)return;const _0x15ce6c=document['getElementById'](_0x46cb81(0x208)),_0x22720e=document[_0x46cb81(0x262)](_0x46cb81(0x24e)),_0x1c1c2f=document[_0x46cb81(0x207)](_0x46cb81(0x212));_0x1c1c2f[_0x46cb81(0x1cd)]='no-results',_0x1c1c2f[_0x46cb81(0x253)]=_0x46cb81(0x242),_0x5620bf[_0x46cb81(0x1c4)]['parentElement'][_0x46cb81(0x233)](_0x1c1c2f);function _0x4c75dd(){const _0x59f2f9=_0x46cb81,_0x2beae1=_0x5620bf[_0x59f2f9(0x22e)][_0x59f2f9(0x225)]()[_0x59f2f9(0x21a)]();let _0x2423b3=![];_0x15ce6c[_0x59f2f9(0x1c1)]['display']=_0x2beae1?_0x59f2f9(0x209):_0x59f2f9(0x261),_0x22720e[_0x59f2f9(0x1f5)](_0x2789d0=>{const _0x2e2b0c=_0x59f2f9;_0x2789d0[_0x2e2b0c(0x215)][_0x2e2b0c(0x23a)]('search-visible');}),_0x22720e['forEach']((_0x424d1c,_0x18c05e)=>{const _0x45d9d5=_0x59f2f9,_0x32c114=_0x424d1c[_0x45d9d5(0x1ca)]('h3')?.[_0x45d9d5(0x249)][_0x45d9d5(0x225)]()||'',_0x2ab4b3=_0x424d1c[_0x45d9d5(0x1ca)]('p')?.[_0x45d9d5(0x249)][_0x45d9d5(0x225)]()||'';_0x2beae1===''||_0x32c114['includes'](_0x2beae1)||_0x2ab4b3[_0x45d9d5(0x1e0)](_0x2beae1)?(_0x424d1c[_0x45d9d5(0x1c1)][_0x45d9d5(0x1df)]=_0x45d9d5(0x209),setTimeout(()=>{const _0x1cbf0e=_0x45d9d5;_0x424d1c[_0x1cbf0e(0x215)][_0x1cbf0e(0x20e)]('search-visible');},_0x18c05e*0x32),_0x2423b3=!![]):_0x424d1c[_0x45d9d5(0x1c1)][_0x45d9d5(0x1df)]=_0x45d9d5(0x261);}),_0x1c1c2f['style'][_0x59f2f9(0x1df)]=_0x2423b3||!_0x2beae1?_0x59f2f9(0x261):_0x59f2f9(0x209);}_0x5620bf[_0x46cb81(0x226)](_0x46cb81(0x1d9),_0x4c75dd),_0x15ce6c[_0x46cb81(0x226)]('click',function(){const _0x4a1246=_0x46cb81;_0x5620bf[_0x4a1246(0x22e)]='',_0x4c75dd(),_0x5620bf[_0x4a1246(0x227)]();}),_0x4c75dd();});function createBookmarklet(_0x1089df,_0x570a23){const _0x38b8d7=_0x2d60ed,_0xff6d89=document['createElement']('a');_0xff6d89['href']=_0x570a23,_0xff6d89[_0x38b8d7(0x249)]=_0x1089df,_0xff6d89[_0x38b8d7(0x1c1)]['display']=_0x38b8d7(0x261),document[_0x38b8d7(0x20f)]['appendChild'](_0xff6d89),alert(_0x38b8d7(0x1f7)),document[_0x38b8d7(0x20f)]['removeChild'](_0xff6d89);}document['addEventListener']('DOMContentLoaded',function(){const _0x52c993=_0x2d60ed,_0xdeb08c=document[_0x52c993(0x22b)]('game-search'),_0x4519b1=document[_0x52c993(0x22b)]('clear-search'),_0x23481a=document[_0x52c993(0x262)](_0x52c993(0x24e)),_0x8d499b=document[_0x52c993(0x1ca)](_0x52c993(0x1e4));function _0x486b0e(){const _0x4da9b0=_0x52c993,_0x2e03dc=_0xdeb08c['value'][_0x4da9b0(0x225)]()[_0x4da9b0(0x21a)]();let _0x554460=![];_0x23481a['forEach'](_0x3416c1=>{const _0x45637e=_0x4da9b0,_0x1c0a4f=_0x3416c1['querySelector']('h3')[_0x45637e(0x249)]['toLowerCase']();_0x1c0a4f[_0x45637e(0x1e0)](_0x2e03dc)?(_0x3416c1[_0x45637e(0x1c1)][_0x45637e(0x1df)]=_0x45637e(0x20d),_0x554460=!![]):_0x3416c1[_0x45637e(0x1c1)]['display']='none';}),_0x8d499b[_0x4da9b0(0x1c1)][_0x4da9b0(0x1df)]=_0x554460?_0x4da9b0(0x261):'block',_0x4519b1[_0x4da9b0(0x1c1)][_0x4da9b0(0x1df)]=_0x2e03dc?_0x4da9b0(0x209):_0x4da9b0(0x261);}_0xdeb08c[_0x52c993(0x226)]('input',_0x486b0e),_0x4519b1['addEventListener'](_0x52c993(0x216),function(){const _0x4ccf5d=_0x52c993;_0xdeb08c[_0x4ccf5d(0x22e)]='',_0x486b0e(),_0xdeb08c[_0x4ccf5d(0x227)]();});});function copyBookmarkletCode(_0x3f46a6,_0x4423b1){const _0x1979bf=_0x2d60ed;navigator[_0x1979bf(0x205)][_0x1979bf(0x1e2)](_0x4423b1)[_0x1979bf(0x25c)](()=>{const _0x2caa1a=_0x1979bf;alert(_0x2caa1a(0x234)+_0x3f46a6+_0x2caa1a(0x252)+_0x3f46a6+'\x0a4.\x20For\x20the\x20URL/location,\x20paste\x20the\x20copied\x20code\x0a5.\x20Click\x20Save');})[_0x1979bf(0x228)](_0x18379f=>{const _0x1648bf=_0x1979bf;console[_0x1648bf(0x238)](_0x1648bf(0x25e),_0x18379f),alert(_0x1648bf(0x1d3));});}function applyWebsiteSettings(){const _0x1e2662=_0x2d60ed,_0x2037f0=localStorage[_0x1e2662(0x224)](_0x1e2662(0x217));if(_0x2037f0)try{const _0x1eaf9b=JSON[_0x1e2662(0x221)](_0x2037f0);if(_0x1eaf9b[_0x1e2662(0x1f4)])document[_0x1e2662(0x1f4)]=_0x1eaf9b['title'];if(_0x1eaf9b[_0x1e2662(0x1bd)]){let _0x131b95=document[_0x1e2662(0x1ca)]('link[rel=\x22icon\x22]');!_0x131b95&&(_0x131b95=document[_0x1e2662(0x207)](_0x1e2662(0x1e1)),_0x131b95[_0x1e2662(0x1fb)]=_0x1e2662(0x1f6),document[_0x1e2662(0x22f)][_0x1e2662(0x201)](_0x131b95)),_0x131b95[_0x1e2662(0x22d)]=_0x1eaf9b['favicon'];}if(_0x1eaf9b[_0x1e2662(0x1d2)])document[_0x1e2662(0x20f)][_0x1e2662(0x1cd)]=_0x1eaf9b['theme'];}catch(_0x304fe7){console['error'](_0x1e2662(0x246),_0x304fe7);}}function _0x5231(){const _0x562640=['pathname','now','games.html','clipboard','Music\x20tags\x20found:','createElement','clear-search','block','Search\x20button\x20clicked','logo.svg','https://www.youtube.com/results?search_query=','flex','add','body','Enter\x20key\x20pressed\x20in\x20search\x20input','left','div','settingsUpdated','\x22\x20bookmark:\x0a\x0a1.\x20Right-click\x20on\x20your\x20bookmarks\x20bar\x0a2.\x20Select\x20\x22Add\x20page\x22\x20or\x20\x22Add\x20bookmark\x22\x0a3.\x20For\x20the\x20name,\x20enter:\x20','classList','click','websiteSettings','password','removeItem','trim','.html','tab-title','some','.music-tag','translateY(-5px)','Settings\x20reset\x20to\x20default!','parse','active','height','getItem','toLowerCase','addEventListener','focus','catch','change','16px','getElementById','8noTVgX','href','value','head','codexSettings','save-settings','mouseleave','after','Bookmarklet\x20code\x20copied\x20to\x20clipboard!\x0a\x0aTo\x20create\x20the\x20\x22','preventDefault','checked','\x0a4.\x20For\x20the\x20URL\x20field,\x20paste\x20the\x20copied\x20text\x0a5.\x20Click\x20Save','error','index.html','remove','contain','removeChild','.content,\x20.game-card,\x20.about-image,\x20.about-content,\x20.music-search-box,\x20.popular-searches,\x20.category','true','settings-form','0\x2010px\x2025px\x20rgba(0,\x200,\x200,\x200.7),\x200\x200\x2015px\x20rgba(255,\x200,\x2034,\x200.2)','a[href^=\x22home\x22],\x20a[href^=\x22games\x22],\x20a[href^=\x22music\x22],\x20a[href^=\x22about\x22],\x20a[href^=\x22system\x22],\x20a[href^=\x22settings\x22]','<i\x20class=\x22fas\x20fa-search\x22></i>\x20No\x20games\x20found.\x20Try\x20a\x20different\x20search\x20term.','select','.hero-bg','Settings\x20saved\x20successfully!','Error\x20applying\x20website\x20settings:','key','music-search-input','textContent','translateY(-2px)','1573954UJzdFK','stringify','.page-transition','.game-card','system.html','6519528iKpNdc','.category','\x22\x20bookmarklet:\x0a\x0a1.\x20Right-click\x20on\x20your\x20bookmarks\x20bar\x0a2.\x20Select\x20\x22Add\x20page\x22\x20or\x20\x22Add\x20bookmark\x22\x0a3.\x20For\x20the\x20name,\x20enter:\x20','innerHTML','transform','width','boxShadow','Bookmark\x20code\x20copied\x20to\x20clipboard!\x0a\x0aTo\x20create\x20the\x20\x22','innerHeight','log','length','about.html','then','Music\x20search\x20elements\x20found','Failed\x20to\x20copy:\x20','11dugnyx','position','none','querySelectorAll','replace','loaded','DOMContentLoaded','-999999px','title-preview','getBoundingClientRect','rgba(255,\x200,\x2034,\x200.2)','favicon','0\x205px\x2010px\x20rgba(0,\x200,\x200,\x200.3)','game-search','background','style','scroll','settings.html','parentElement','Password\x20input\x20found','input[value=\x22logo.svg\x22]','tabTitle','open','7hmBNJZ','querySelector','home.html','5454186ggwBEl','className','error-message','Failed\x20to\x20copy.\x20Please\x20try\x20again\x20or\x20manually\x20copy\x20this\x20code:\x0a\x0a','visible','settings-success','theme','Failed\x20to\x20copy\x20code.\x20Please\x20try\x20again\x20or\x20manually\x20select\x20and\x20copy\x20the\x20code.','input[name=\x22favicon\x22]:checked','Tag\x20clicked:','CodeX','authTimestamp','Enter','input','favicon-preview','toString','objectFit','textarea','music-search-button','display','includes','link','writeText','translateY(','.no-results','scrollY','32px','53512AmrAct','keypress','location','_blank','77256PmZbff','authenticated','Please\x20enter\x20a\x20search\x20term','5375510EnJGUp','.favicon-option\x20label\x20img,\x20#favicon-preview','5571420sJBxrI','6fVFkyv','currentFavicon','music.html','title','forEach','icon','To\x20add\x20this\x20bookmarklet:\x0a\x0a1.\x20Right-click\x20the\x20\x22Add\x20Bookmark\x22\x20button\x0a2.\x20Select\x20\x22Add\x20to\x20bookmarks\x22\x20or\x20\x22Bookmark\x20this\x20link\x22\x0a3.\x20Save\x20the\x20bookmark\x20to\x20your\x20bookmarks\x20bar\x0a\x0aAlternatively,\x20drag\x20the\x20button\x20directly\x20to\x20your\x20bookmarks\x20bar.','mouseenter','Incorrect\x20password.\x20Please\x20try\x20again.','endsWith','rel','setItem','top','oneTimePasswordComplete','shake','input[name=\x22favicon\x22]','appendChild'];_0x5231=function(){return _0x562640;};return _0x5231();}applyWebsiteSettings(),window[_0x2d60ed(0x226)]('storage',function(_0x5a96fd){const _0x27451f=_0x2d60ed;(_0x5a96fd[_0x27451f(0x247)]===_0x27451f(0x213)||_0x5a96fd[_0x27451f(0x247)]===_0x27451f(0x217))&&applyWebsiteSettings();});function copyHiddenBookmarklet(_0x1bf42d,_0x47d1cf){const _0x31ca3c=_0x2d60ed,_0xcd48b8=_0x47d1cf['replace'](/^\/\*/,'')[_0x31ca3c(0x263)](/\*\/$/,'')[_0x31ca3c(0x21a)]();navigator['clipboard'][_0x31ca3c(0x1e2)](_0xcd48b8)[_0x31ca3c(0x25c)](()=>{const _0x5972d9=_0x31ca3c;alert(_0x5972d9(0x257)+_0x1bf42d+_0x5972d9(0x214)+_0x1bf42d+_0x5972d9(0x237));})[_0x31ca3c(0x228)](_0x2a462c=>{const _0x3ef51b=_0x31ca3c,_0xae0490=document['createElement'](_0x3ef51b(0x1dd));_0xae0490[_0x3ef51b(0x22e)]=_0xcd48b8,_0xae0490[_0x3ef51b(0x1c1)][_0x3ef51b(0x260)]='fixed',_0xae0490['style'][_0x3ef51b(0x211)]=_0x3ef51b(0x266),_0xae0490['style'][_0x3ef51b(0x1fd)]='-999999px',document[_0x3ef51b(0x20f)]['appendChild'](_0xae0490),_0xae0490[_0x3ef51b(0x227)](),_0xae0490[_0x3ef51b(0x243)]();try{const _0x4d8353=document['execCommand']('copy');_0x4d8353?alert('Bookmark\x20code\x20copied\x20to\x20clipboard!\x0a\x0aTo\x20create\x20the\x20\x22'+_0x1bf42d+_0x3ef51b(0x214)+_0x1bf42d+_0x3ef51b(0x237)):alert(_0x3ef51b(0x1cf)+_0xcd48b8);}catch(_0x3e1fe3){alert(_0x3ef51b(0x1cf)+_0xcd48b8);}document['body'][_0x3ef51b(0x23c)](_0xae0490);});}function saveSettings(){const _0x476b5d=_0x2d60ed,_0x50fac9=document[_0x476b5d(0x22b)](_0x476b5d(0x21c))[_0x476b5d(0x22e)],_0x4209a0=document[_0x476b5d(0x1ca)](_0x476b5d(0x1d4))[_0x476b5d(0x22e)],_0x26c541={'tabTitle':_0x50fac9,'currentFavicon':_0x4209a0};localStorage[_0x476b5d(0x1fc)](_0x476b5d(0x230),JSON[_0x476b5d(0x24c)](_0x26c541));const _0x4f5fbe=document[_0x476b5d(0x22b)](_0x476b5d(0x1d1));_0x4f5fbe[_0x476b5d(0x249)]=_0x476b5d(0x245),applySavedSettings(),setTimeout(()=>{const _0x2cb517=_0x476b5d;_0x4f5fbe[_0x2cb517(0x249)]='';},0xbb8);}function resetSettings(){const _0x39a58=_0x2d60ed,_0x1f13c3={'tabTitle':_0x39a58(0x1d6),'currentFavicon':'logo.svg'};localStorage['setItem']('codexSettings',JSON[_0x39a58(0x24c)](_0x1f13c3)),document[_0x39a58(0x22b)](_0x39a58(0x21c))[_0x39a58(0x22e)]=_0x1f13c3[_0x39a58(0x1c7)],document[_0x39a58(0x1ca)]('input[value=\x22'+_0x1f13c3[_0x39a58(0x1f2)]+'\x22]')[_0x39a58(0x236)]=!![],applySavedSettings();const _0x2aa18c=document[_0x39a58(0x22b)]('settings-success');_0x2aa18c[_0x39a58(0x249)]=_0x39a58(0x220),setTimeout(()=>{const _0x4c4f2b=_0x39a58;_0x2aa18c[_0x4c4f2b(0x249)]='';},0xbb8);}function _0x25e9(_0x329a30,_0xe8d1a3){const _0x523193=_0x5231();return _0x25e9=function(_0x25e9bd,_0x5f0fbd){_0x25e9bd=_0x25e9bd-0x1ba;let _0x271e6d=_0x523193[_0x25e9bd];return _0x271e6d;},_0x25e9(_0x329a30,_0xe8d1a3);}function loadSavedSettingsIntoForm(){const _0x161b4d=_0x2d60ed,_0x2d11d5=localStorage[_0x161b4d(0x224)](_0x161b4d(0x230));if(_0x2d11d5){const _0x36ce35=JSON[_0x161b4d(0x221)](_0x2d11d5);document[_0x161b4d(0x22b)](_0x161b4d(0x21c))['value']=_0x36ce35[_0x161b4d(0x1c7)]||_0x161b4d(0x1d6);const _0x3eb2a7=document[_0x161b4d(0x1ca)]('input[value=\x22'+_0x36ce35[_0x161b4d(0x1f2)]+'\x22]');_0x3eb2a7?_0x3eb2a7['checked']=!![]:document[_0x161b4d(0x1ca)](_0x161b4d(0x1c6))[_0x161b4d(0x236)]=!![];}}document[_0x2d60ed(0x226)](_0x2d60ed(0x265),function(){const _0x5662a8=_0x2d60ed,_0x492679=document[_0x5662a8(0x22b)](_0x5662a8(0x23f));if(_0x492679){loadSavedSettingsIntoForm(),document[_0x5662a8(0x22b)](_0x5662a8(0x231))[_0x5662a8(0x226)]('click',function(_0x5eb2d0){_0x5eb2d0['preventDefault'](),saveSettings();}),document[_0x5662a8(0x22b)]('reset-settings')['addEventListener'](_0x5662a8(0x216),function(_0xdcf699){const _0x2662fc=_0x5662a8;_0xdcf699[_0x2662fc(0x235)](),resetSettings();}),document['getElementById'](_0x5662a8(0x21c))[_0x5662a8(0x226)](_0x5662a8(0x1d9),function(){const _0xe13096=_0x5662a8;document['getElementById'](_0xe13096(0x1ba))['textContent']=this[_0xe13096(0x22e)]||_0xe13096(0x1d6);});const _0x5af8c7=document[_0x5662a8(0x262)](_0x5662a8(0x200));_0x5af8c7[_0x5662a8(0x1f5)](_0x7ef4c3=>{const _0x159b54=_0x5662a8;_0x7ef4c3['addEventListener'](_0x159b54(0x229),function(){const _0x56a407=_0x159b54;document[_0x56a407(0x22b)](_0x56a407(0x1da))['src']=this[_0x56a407(0x22e)];});});}}),document[_0x2d60ed(0x226)](_0x2d60ed(0x265),function(){const _0x2ef570=_0x2d60ed,_0x592652=document[_0x2ef570(0x262)]('.favicon-option\x20label\x20img,\x20#favicon-preview');_0x592652['forEach'](_0x3846db=>{const _0x5d341a=_0x2ef570;_0x3846db['onload']=function(){const _0x2fa8c2=_0x25e9;_0x3846db['id']===_0x2fa8c2(0x1da)?(_0x3846db[_0x2fa8c2(0x1c1)][_0x2fa8c2(0x255)]=_0x2fa8c2(0x22a),_0x3846db['style']['height']=_0x2fa8c2(0x22a)):(_0x3846db['style'][_0x2fa8c2(0x255)]=_0x2fa8c2(0x1e6),_0x3846db[_0x2fa8c2(0x1c1)][_0x2fa8c2(0x223)]=_0x2fa8c2(0x1e6)),_0x3846db[_0x2fa8c2(0x1c1)][_0x2fa8c2(0x1dc)]=_0x2fa8c2(0x23b);},_0x3846db['complete']&&(_0x3846db['id']===_0x5d341a(0x1da)?(_0x3846db[_0x5d341a(0x1c1)][_0x5d341a(0x255)]=_0x5d341a(0x22a),_0x3846db[_0x5d341a(0x1c1)][_0x5d341a(0x223)]=_0x5d341a(0x22a)):(_0x3846db['style'][_0x5d341a(0x255)]='32px',_0x3846db[_0x5d341a(0x1c1)][_0x5d341a(0x223)]='32px'),_0x3846db['style'][_0x5d341a(0x1dc)]=_0x5d341a(0x23b));});}),document['addEventListener']('DOMContentLoaded',function(){const _0x2143ef=_0x2d60ed,_0x125b42=document['querySelectorAll'](_0x2143ef(0x1ef));_0x125b42[_0x2143ef(0x1f5)](_0x158b16=>{const _0x4a6fad=_0x2143ef;_0x158b16['onload']=function(){const _0x226920=_0x25e9;_0x158b16[_0x226920(0x1c1)][_0x226920(0x255)]=_0x226920(0x1e6),_0x158b16[_0x226920(0x1c1)][_0x226920(0x223)]=_0x226920(0x1e6),_0x158b16['style'][_0x226920(0x1dc)]='contain';},_0x158b16['complete']&&(_0x158b16['style']['width']=_0x4a6fad(0x1e6),_0x158b16[_0x4a6fad(0x1c1)][_0x4a6fad(0x223)]=_0x4a6fad(0x1e6),_0x158b16[_0x4a6fad(0x1c1)][_0x4a6fad(0x1dc)]=_0x4a6fad(0x23b));});});
+const zdbbyrch = Math.floor(Math.random() * 999999);
+function checkPassword() {
+    const _0x8bc8af = document.getElementById("password").value;
+    const _0x48371a = document.getElementById("error-message");
+    if (_0x8bc8af === zdbbyrch) {
+        localStorage.setItem("oneTimePasswordComplete", "true");
+        sessionStorage.setItem("authenticated", 'true');
+        sessionStorage.setItem('authTimestamp', Date.now().toString());
+        const _0x5dd738 = document.querySelector(".page-transition");
+        _0x5dd738.classList.add("active");
+        setTimeout(() => {
+            window.location.href = "home.html";
+        }, 0x1f4);
+    } else {
+        _0x48371a.textContent = "Incorrect password. Please try again.";
+        const _0x4ee364 = document.getElementById("password");
+        _0x4ee364.classList.add("shake");
+        setTimeout(() => {
+            _0x4ee364.classList.remove('shake');
+        }, 0x1f4);
+        setTimeout(() => {
+            _0x48371a.textContent = '';
+        }, 0xbb8);
+    }
+}
+function verifyAuth() {
+    const _0x36acc8 = localStorage.getItem("oneTimePasswordComplete");
+    if (_0x36acc8 === "true") {
+        sessionStorage.setItem('authenticated', 'true');
+        sessionStorage.setItem('authTimestamp', Date.now().toString());
+        return true;
+    }
+    sessionStorage.removeItem("authenticated");
+    sessionStorage.removeItem('authTimestamp');
+    window.location.replace("index.html");
+    return false;
+}
+function openGame(_0xb4a72a) {
+    window.open(_0xb4a72a, "_blank");
+}
+function searchMusic(_0x2f521d) {
+    if (!_0x2f521d) {
+        _0x2f521d = document.getElementById("music-search-input").value.trim();
+        if (!_0x2f521d) {
+            alert("Please enter a search term");
+            return;
+        }
+    }
+    const _0x110b86 = encodeURIComponent(_0x2f521d);
+    const _0x1035b1 = "https://www.youtube.com/results?search_query=" + _0x110b86;
+    window.open(_0x1035b1, "_blank");
+}
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded");
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
+        if (localStorage.getItem("oneTimePasswordComplete") === 'true') {
+            window.location.replace("home.html");
+            return;
+        }
+    }
+    const _0x46ca4e = ['home.html', "games.html", "music.html", "about.html", "system.html", 'settings.html'];
+    const _0x27c334 = window.location.pathname;
+    if (_0x46ca4e.some(_0x2cebc1 => _0x27c334.endsWith(_0x2cebc1) || _0x27c334.includes(_0x2cebc1.replace(".html", '')))) {
+        if (!verifyAuth()) {
+            return;
+        }
+        sessionStorage.setItem("authTimestamp", Date.now().toString());
+    }
+    applySavedSettings();
+    document.body.classList.add("loaded");
+    const _0x4a5328 = document.getElementById("password");
+    if (_0x4a5328) {
+        console.log("Password input found");
+        _0x4a5328.addEventListener("keypress", function (_0x1cb0f0) {
+            if (_0x1cb0f0.key === "Enter") {
+                checkPassword();
+            }
+        });
+        _0x4a5328.focus();
+    }
+});
+function openGame(_0x3be3af) {
+    window.open(_0x3be3af, "_blank");
+}
+function searchMusic(_0x4aff78) {
+    if (!_0x4aff78) {
+        _0x4aff78 = document.getElementById('music-search-input').value.trim();
+        if (!_0x4aff78) {
+            alert("Please enter a search term");
+            return;
+        }
+    }
+    const _0xc0fe0c = encodeURIComponent(_0x4aff78);
+    const _0x50e759 = "https://www.youtube.com/results?search_query=" + _0xc0fe0c;
+    window.open(_0x50e759, "_blank");
+}
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded");
+    const _0x299d6a = ["home.html", "games.html", "music.html", "about.html", 'system.html', "settings.html"];
+    const _0x3c4076 = window.location.pathname;
+    if (_0x299d6a.some(_0x8bac57 => _0x3c4076.endsWith(_0x8bac57) || _0x3c4076.includes(_0x8bac57.replace('.html', '')))) {
+        if (!verifyAuth()) {
+            return;
+        }
+        sessionStorage.setItem("authTimestamp", Date.now().toString());
+    }
+    applySavedSettings();
+    document.body.classList.add('loaded');
+    const _0x31b172 = document.getElementById('password');
+    if (_0x31b172) {
+        console.log("Password input found");
+        _0x31b172.addEventListener('keypress', function (_0x4252b0) {
+            if (_0x4252b0.key === "Enter") {
+                checkPassword();
+            }
+        });
+        _0x31b172.focus();
+    }
+    const _0x5b1d3f = document.getElementById("music-search-button");
+    const _0x3ee9dc = document.getElementById('music-search-input');
+    if (_0x5b1d3f && _0x3ee9dc) {
+        console.log("Music search elements found");
+        _0x5b1d3f.addEventListener("click", function () {
+            console.log("Search button clicked");
+            searchMusic();
+        });
+        _0x3ee9dc.addEventListener("keypress", function (_0x17b5cf) {
+            if (_0x17b5cf.key === "Enter") {
+                console.log("Enter key pressed in search input");
+                searchMusic();
+            }
+        });
+    }
+    const _0x4b7362 = document.querySelectorAll("a[href^=\"home\"], a[href^=\"games\"], a[href^=\"music\"],
+a[href ^=\"about\"], a[href^=\"system\"], a[href^=\"settings\"]");
+    _0x4b7362.forEach(_0x21b805 => {
+        _0x21b805.addEventListener("click", function (_0x9572d2) {
+            _0x9572d2.preventDefault();
+            const _0xb9219f = this.getAttribute("href");
+            const _0x4593b8 = document.querySelector('.page-transition');
+            if (!verifyAuth()) {
+                return;
+            }
+            _0x4593b8.classList.add("active");
+            setTimeout(() => {
+                window.location.href = _0xb9219f;
+            }, 0x1f4);
+        });
+    });
+    const _0x4f15c9 = function () {
+        const _0x5b4d5e = document.querySelectorAll(".content, .game-card, .about-image, .about-content, .music-search-box,
+            .popular - searches, .category");
+_0x5b4d5e.forEach(_0x63b896 => {
+                const _0x1c4b89 = _0x63b896.getBoundingClientRect().top;
+                const _0x5ad5c6 = window.innerHeight;
+                if (_0x1c4b89 < _0x5ad5c6 - 0x64) { _0x63b896.classList.add("visible"); }
+            });
+    }; window.addEventListener("scroll",
+        _0x4f15c9); _0x4f15c9(); const _0x312315 = document.querySelector(".hero-bg"); if (_0x312315) {
+            window.addEventListener('scroll', function () {
+                const _0x43b5e5 = window.scrollY;
+                _0x312315.style.transform = "translateY(" + _0x43b5e5 * 0.4 + 'px)';
+            });
+        } const
+            _0x545376 = document.querySelectorAll(".game-card"); _0x545376.forEach(_0x2d11bb => {
+                _0x2d11bb.addEventListener("mouseenter", function () {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = "0 15px 30px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 0, 34, 0.3)";
+                });
+                _0x2d11bb.addEventListener("mouseleave", function () {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                });
+            });
+    const _0x4331b2 = document.querySelectorAll(".category");
+    if (_0x4331b2.length > 0x0) {
+        _0x4331b2.forEach(_0x1daed2 => {
+            _0x1daed2.addEventListener('mouseenter', function () {
+                this.style.transform = "translateY(-5px)";
+                this.style.boxShadow = "0 10px 25px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 0, 34, 0.2)";
+            });
+            _0x1daed2.addEventListener('mouseleave', function () {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+    }
+    const _0x5dd99a = document.querySelectorAll('.tag');
+    if (_0x5dd99a.length > 0x0) {
+        _0x5dd99a.forEach(_0x479324 => {
+            _0x479324.addEventListener("mouseenter", function () {
+                this.style.transform = "translateY(-2px)";
+                this.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.3)";
+                this.style.background = "rgba(255, 0, 34, 0.2)";
+            });
+            _0x479324.addEventListener("mouseleave", function () {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+                this.style.background = '';
+            });
+            _0x479324.addEventListener('click', function () {
+                const _0x18f317 = this.textContent.trim();
+                console.log("Tag clicked:", _0x18f317);
+                searchMusic(_0x18f317);
+            });
+        });
+    }
+    const _0x592c17 = document.querySelectorAll(".music-tag");
+    if (_0x592c17.length > 0x0) {
+        console.log("Music tags found:", _0x592c17.length);
+        _0x592c17.forEach(_0x178c26 => {
+            _0x178c26.addEventListener("click", function () {
+                const _0xfbfdf5 = this.textContent.trim();
+                console.log("Music tag clicked:", _0xfbfdf5);
+                searchMusic(_0xfbfdf5);
+            });
+        });
+    }
+});
+function applySavedSettings() {
+    const _0x347272 = localStorage.getItem("codexSettings");
+    if (_0x347272) {
+        const _0x495d64 = JSON.parse(_0x347272);
+        document.title = _0x495d64.tabTitle || "CodeX";
+        const _0x45f5d3 = _0x495d64.currentFavicon || "logo.svg";
+        const _0x4b4aed = document.querySelectorAll("link[rel=\"icon\"], link[rel=\"shortcut icon\"]");
+        if (_0x4b4aed.length > 0x0) {
+            _0x4b4aed.forEach(_0x415250 => {
+                _0x415250.href = _0x45f5d3;
+            });
+        } else {
+            const _0x5f4249 = document.createElement("link");
+            _0x5f4249.rel = "icon";
+            _0x5f4249.href = _0x45f5d3;
+            document.head.appendChild(_0x5f4249);
+        }
+    }
+}
+document.addEventListener('DOMContentLoaded', function () {
+    const _0x5620bf = document.getElementById("game-search");
+    if (!_0x5620bf) {
+        return;
+    }
+    const _0x15ce6c = document.getElementById("clear-search");
+    const _0x22720e = document.querySelectorAll(".game-card");
+    const _0x1c1c2f = document.createElement("div");
+    _0x1c1c2f.className = 'no-results';
+    _0x1c1c2f.innerHTML = "<i class=\"fas fa-search\"></i> No games found. Try a different search term.";
+    _0x5620bf.parentElement.parentElement.after(_0x1c1c2f);
+    function _0x4c75dd() {
+        const _0x2beae1 = _0x5620bf.value.toLowerCase().trim();
+        let _0x2423b3 = false;
+        _0x15ce6c.style.display = _0x2beae1 ? "block" : "none";
+        _0x22720e.forEach(_0x2789d0 => {
+            _0x2789d0.classList.remove('search-visible');
+        });
+        _0x22720e.forEach((_0x424d1c, _0x18c05e) => {
+            const _0x32c114 = _0x424d1c.querySelector('h3')?.["textContent"]["toLowerCase"]() || '';
+            const _0x2ab4b3 = _0x424d1c.querySelector('p')?.["textContent"]["toLowerCase"]() || '';
+            if (_0x2beae1 === '' || _0x32c114.includes(_0x2beae1) || _0x2ab4b3.includes(_0x2beae1)) {
+                _0x424d1c.style.display = "block";
+                setTimeout(() => {
+                    _0x424d1c.classList.add('search-visible');
+                }, _0x18c05e * 0x32);
+                _0x2423b3 = true;
+            } else {
+                _0x424d1c.style.display = "none";
+            }
+        });
+        _0x1c1c2f.style.display = _0x2423b3 || !_0x2beae1 ? "none" : "block";
+    }
+    _0x5620bf.addEventListener("input", _0x4c75dd);
+    _0x15ce6c.addEventListener('click', function () {
+        _0x5620bf.value = '';
+        _0x4c75dd();
+        _0x5620bf.focus();
+    });
+    _0x4c75dd();
+});
+function createBookmarklet(_0x1089df, _0x570a23) {
+    const _0xff6d89 = document.createElement('a');
+    _0xff6d89.href = _0x570a23;
+    _0xff6d89.textContent = _0x1089df;
+    _0xff6d89.style.display = "none";
+    document.body.appendChild(_0xff6d89);
+    alert("To add this bookmarklet:\n\n1. Right-click the \"Add Bookmark\" button\n2. Select \"Add to bookmarks\" or
+        \"Bookmark this link\"\n3. Save the bookmark to your bookmarks bar\n\nAlternatively, drag the button directly to
+	your bookmarks bar.");
+	document.body.removeChild(_0xff6d89);
+}
+document.addEventListener('DOMContentLoaded', function () {
+    const _0xdeb08c = document.getElementById('game-search');
+    const _0x4519b1 = document.getElementById('clear-search');
+    const _0x23481a = document.querySelectorAll(".game-card");
+    const _0x8d499b = document.querySelector(".no-results");
+    function _0x486b0e() {
+        const _0x2e03dc = _0xdeb08c.value.toLowerCase().trim();
+        let _0x554460 = false;
+        _0x23481a.forEach(_0x3416c1 => {
+            const _0x1c0a4f = _0x3416c1.querySelector('h3').textContent.toLowerCase();
+            if (_0x1c0a4f.includes(_0x2e03dc)) {
+                _0x3416c1.style.display = "flex";
+                _0x554460 = true;
+            } else {
+                _0x3416c1.style.display = 'none';
+            }
+        });
+        _0x8d499b.style.display = _0x554460 ? "none" : 'block';
+        _0x4519b1.style.display = _0x2e03dc ? "block" : "none";
+    }
+    _0xdeb08c.addEventListener('input', _0x486b0e);
+    _0x4519b1.addEventListener("click", function () {
+        _0xdeb08c.value = '';
+        _0x486b0e();
+        _0xdeb08c.focus();
+    });
+});
+function copyBookmarkletCode(_0x3f46a6, _0x4423b1) {
+    navigator.clipboard.writeText(_0x4423b1).then(() => {
+        alert(`Bookmarklet code copied to clipboard!\n\nTo create the ${_0x3f46a6} bookmarklet:\n\n1. Right-click
+	on your bookmarks bar\n2.Select "Add page" or "Add bookmark"\n3. For the name, enter: ${0x3f46a6} For
+	the URL / location, paste the copied code\n5.Click Save`);
+	})["catch"](_0x18379f => {
+            console.error("Failed to copy: ", _0x18379f);
+            alert("Failed to copy code. Please try again or manually select and copy the code.");
+        });
+}
+function applyWebsiteSettings() {
+    const _0x2037f0 = localStorage.getItem("websiteSettings");
+    if (_0x2037f0) {
+        try {
+            const _0x1eaf9b = JSON.parse(_0x2037f0);
+            if (_0x1eaf9b.title) {
+                document.title = _0x1eaf9b.title;
+            }
+            if (_0x1eaf9b.favicon) {
+                let _0x131b95 = document.querySelector("link[rel=\"icon\"]");
+                if (!_0x131b95) {
+                    _0x131b95 = document.createElement("link");
+                    _0x131b95.rel = "icon";
+                    document.head.appendChild(_0x131b95);
+                }
+                _0x131b95.href = _0x1eaf9b.favicon;
+            }
+            if (_0x1eaf9b.theme) {
+                document.body.className = _0x1eaf9b.theme;
+            }
+        } catch (_0x304fe7) {
+            console.error("Error applying website settings:", _0x304fe7);
+        }
+    }
+}
+applyWebsiteSettings();
+window.addEventListener('storage', function (_0x5a96fd) {
+    if (_0x5a96fd.key === "settingsUpdated" || _0x5a96fd.key === "websiteSettings") {
+        applyWebsiteSettings();
+    }
+});
+function copyHiddenBookmarklet(_0x1bf42d, _0x47d1cf) {
+    const _0xcd48b8 = _0x47d1cf.replace(/^\/\*/, '').replace(/\*\/$/, '').trim();
+    navigator.clipboard.writeText(_0xcd48b8).then(() => {
+        alert("Bookmark code copied to clipboard!\n\nTo create the \"" + _0x1bf42d + "\" bookmark:\n\n1. Right-click on your
+	bookmarks bar\n2.Select \"Add page\" or \"Add bookmark\"\n3. For the name, enter: " + _0x1bf42d + "\n4. For the URL
+	field, paste the copied text\n5.Click Save");
+	})["catch"](_0x2a462c => {
+            const _0xae0490 = document.createElement("textarea");
+            _0xae0490.value = _0xcd48b8;
+            _0xae0490.style.position = 'fixed';
+            _0xae0490.style.left = "-999999px";
+            _0xae0490.style.top = '-999999px';
+            document.body.appendChild(_0xae0490);
+            _0xae0490.focus();
+            _0xae0490.select();
+            try {
+                const _0x4d8353 = document.execCommand('copy');
+                if (_0x4d8353) {
+                    alert("Bookmark code copied to clipboard!\n\nTo create the \"" + _0x1bf42d + "\" bookmark:\n\n1. Right-click on your
+	bookmarks bar\n2.Select \"Add page\" or \"Add bookmark\"\n3. For the name, enter: " + _0x1bf42d + "\n4. For the URL
+	field, paste the copied text\n5.Click Save");
+	} else {
+                    alert("Failed to copy. Please try again or manually copy this code:\n\n" + _0xcd48b8);
+                }
+            } catch (_0x3e1fe3) {
+                alert("Failed to copy. Please try again or manually copy this code:\n\n" + _0xcd48b8);
+            }
+            document.body.removeChild(_0xae0490);
+        });
+}
+function saveSettings() {
+    const _0x50fac9 = document.getElementById("tab-title").value;
+    const _0x4209a0 = document.querySelector("input[name=\"favicon\"]:checked").value;
+    const _0x26c541 = {
+        'tabTitle': _0x50fac9,
+        'currentFavicon': _0x4209a0
+    };
+    localStorage.setItem("codexSettings", JSON.stringify(_0x26c541));
+    const _0x4f5fbe = document.getElementById("settings-success");
+    _0x4f5fbe.textContent = "Settings saved successfully!";
+    applySavedSettings();
+    setTimeout(() => {
+        _0x4f5fbe.textContent = '';
+    }, 0xbb8);
+}
+function resetSettings() {
+    const _0x1f13c3 = {
+        'tabTitle': "CodeX",
+        'currentFavicon': 'logo.svg'
+    };
+    localStorage.setItem('codexSettings', JSON.stringify(_0x1f13c3));
+    document.getElementById("tab-title").value = "CodeX";
+    document.querySelector("input[value=\"logo.svg\"]").checked = true;
+    applySavedSettings();
+    const _0x2aa18c = document.getElementById('settings-success');
+    _0x2aa18c.textContent = "Settings reset to default!";
+    setTimeout(() => {
+        _0x2aa18c.textContent = '';
+    }, 0xbb8);
+}
+function loadSavedSettingsIntoForm() {
+    const _0x2d11d5 = localStorage.getItem("codexSettings");
+    if (_0x2d11d5) {
+        const _0x36ce35 = JSON.parse(_0x2d11d5);
+        document.getElementById("tab-title").value = _0x36ce35.tabTitle || "CodeX";
+        const _0x3eb2a7 = document.querySelector("input[value=\"" + _0x36ce35.currentFavicon + "\"]");
+        if (_0x3eb2a7) {
+            _0x3eb2a7.checked = true;
+        } else {
+            document.querySelector("input[value=\"logo.svg\"]").checked = true;
+        }
+    }
+}
+document.addEventListener("DOMContentLoaded", function () {
+    const _0x492679 = document.getElementById("settings-form");
+    if (_0x492679) {
+        loadSavedSettingsIntoForm();
+        document.getElementById("save-settings").addEventListener('click', function (_0x5eb2d0) {
+            _0x5eb2d0.preventDefault();
+            saveSettings();
+        });
+        document.getElementById('reset-settings').addEventListener("click", function (_0xdcf699) {
+            _0xdcf699.preventDefault();
+            resetSettings();
+        });
+        document.getElementById("tab-title").addEventListener("input", function () {
+            document.getElementById("title-preview").textContent = this.value || "CodeX";
+        });
+        const _0x5af8c7 = document.querySelectorAll("input[name=\"favicon\"]");
+        _0x5af8c7.forEach(_0x7ef4c3 => {
+            _0x7ef4c3.addEventListener("change", function () {
+                document.getElementById("favicon-preview").src = this.value;
+            });
+        });
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const _0x592652 = document.querySelectorAll(".favicon-option label img, #favicon-preview");
+    _0x592652.forEach(_0x3846db => {
+        _0x3846db.onload = function () {
+            if (_0x3846db.id === "favicon-preview") {
+                _0x3846db.style.width = "16px";
+                _0x3846db.style.height = "16px";
+            } else {
+                _0x3846db.style.width = "32px";
+                _0x3846db.style.height = "32px";
+            }
+            _0x3846db.style.objectFit = "contain";
+        };
+        if (_0x3846db.complete) {
+            if (_0x3846db.id === "favicon-preview") {
+                _0x3846db.style.width = "16px";
+                _0x3846db.style.height = "16px";
+            } else {
+                _0x3846db.style.width = '32px';
+                _0x3846db.style.height = '32px';
+            }
+            _0x3846db.style.objectFit = "contain";
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const _0x125b42 = document.querySelectorAll(".favicon-option label img, #favicon-preview");
+    _0x125b42.forEach(_0x158b16 => {
+        _0x158b16.onload = function () {
+            _0x158b16.style.width = "32px";
+            _0x158b16.style.height = "32px";
+            _0x158b16.style.objectFit = 'contain';
+        };
+        if (_0x158b16.complete) {
+            _0x158b16.style.width = "32px";
+            _0x158b16.style.height = "32px";
+            _0x158b16.style.objectFit = "contain";
+        }
+    });
+});
