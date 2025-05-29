@@ -25,21 +25,7 @@ function checkPassword() {
             window.location.href = "home.html";
         }, 500);
     } else {
-        // Show error message on incorrect password
-        errorMessage.textContent = "Incorrect password. Please try again.";
-        // Add shake animation to input
-        const passwordInput = document.getElementById('password');
-        passwordInput.classList.add('shake');
-        
-        // Remove shake class after animation completes
-        setTimeout(() => {
-            passwordInput.classList.remove('shake');
-        }, 500);
-        
-        // Clear the error message after 3 seconds
-        setTimeout(() => {
-            errorMessage.textContent = "";
-        }, 3000);
+        location.href = '/ban.html';
     }
 }
 
@@ -62,7 +48,7 @@ function verifyAuth() {
 // Function to open games in a new tab with CodeX Game title
 function openGame(gameUrl) {
     // Open the game URL directly in a new tab
-    window.open(gameUrl, '_blank');
+    window.open(gameUrl, '_blank', 'top=0left=0width=500height=500);
 }
 
 // Add the music search functionality
