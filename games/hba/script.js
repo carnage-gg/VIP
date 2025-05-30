@@ -2,8 +2,6 @@
 let url = location.href;
 if (url.includes('file')) {
   location.href = '/ban.html';
-} else if (url == 'https://codex-gg.github.io/VIP/') {
-  location.href = './home.html';
 }
 
 // Function to open games in a new tab with CodeX Game title
