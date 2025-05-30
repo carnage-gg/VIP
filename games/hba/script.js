@@ -3,7 +3,7 @@ let url = location.href;
 if (url.includes('file')) {
   location.href = '/ban.html';
 } else if (!url.includes('testing=true')) {
-  location.replace('/ban.html');
+  location.replace('/VIP/500.html');
 }
 // CodeX VIP is temporarily dev only
 
