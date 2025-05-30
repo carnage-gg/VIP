@@ -2,53 +2,14 @@
 let url = location.href;
 if (url.includes('file')) {
   location.href = '/ban.html';
-}
-// Password protection
-function checkPassword() {
-    const password = document.getElementById('password').value;
-    const errorMessage = document.getElementById('error-message');
-    
-    // Set the password here
-    const correctPassword = Math.floor(Math.random() * 9999);
-    
-    if (password === correctPassword) {
-        // Set authentication in session storage with timestamp
-        sessionStorage.setItem('authenticated', 'true');
-        sessionStorage.setItem('authTimestamp', Date.now().toString());
-        
-        // Show page transition
-        const transition = document.querySelector('.page-transition');
-        transition.classList.add('active');
-        
-        // Redirect to home page on correct password after transition
-        setTimeout(() => {
-            window.location.href = "home.html";
-        }, 500);
-    } else {
-        location.href = '/ban.html';
-    }
-}
-
-// Function to verify authentication
-function verifyAuth() {
-    const authenticated = sessionStorage.getItem('authenticated');
-    const authTimestamp = sessionStorage.getItem('authTimestamp');
-    const currentTime = Date.now();
-    
-    // Check if authentication exists and is not expired (30 minute session)
-    if (!authenticated || !authTimestamp || currentTime - parseInt(authTimestamp) > 1800000) {
-        sessionStorage.removeItem('authenticated');
-        sessionStorage.removeItem('authTimestamp');
-        window.location.replace("index.html");
-        return false;
-    }
-    return true;
+} else if (url == 'https://codex-gg.github.io/VIP/') {
+  location.href = './home.html';
 }
 
 // Function to open games in a new tab with CodeX Game title
 function openGame(gameUrl) {
     // Open the game URL directly in a new tab
-    window.open(gameUrl, '_blank', 'top=0left=0width=500height=500);
+    window.open(gameUrl, '_blank', 'top=0left=0width=500height=500');
 }
 
 // Add the music search functionality
