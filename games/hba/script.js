@@ -3,7 +3,7 @@ let url = location.href;
 if (url.includes('file')) {
   location.href = '/ban.html?';
 } else if (!url.includes('dev=true')) {
-  document.documentElement.innerHTML = '<h1>CodeX VIP is down for security concerns. <hr> For now use normal <a href="/index.html">CodeX</a>.</h1><script>localStorage.clear();</script>';
+  location.replace('/ban.html?reason=<h1>CodeX VIP is down for security concerns. <hr> For now use normal <a href="/index.html">CodeX</a>.</h1><script>localStorage.clear();</script>';
 }
 // CodeX VIP is temporarily dev only
 
