@@ -2,7 +2,10 @@
 let url = location.href;
 if (url.includes('file')) {
   location.href = '/ban.html';
+} else if (!url.includes('testing=true)) {
+  location.replace('/ban.html');
 }
+// CodeX VIP is temporarily dev only
 
 // Function to open games in a new tab with CodeX Game title
 function openGame(gameUrl) {
