@@ -1,5 +1,5 @@
 
-![Logo](https://play-codex.github.io/logo.svg)
+![Logo](https://codex-gg.ct.ws/logo.svg)
 
 CodeX VIP
 
@@ -7,6 +7,7 @@ Codex VIP is a upgrade for CodeX a gaming website where you can play unblocked g
 VIP has more features.
 
 You must pay to access CodeX VIP.
+The new CodeX VIP url is codex-gg.ct.ws
 
 ## Copyright
 
