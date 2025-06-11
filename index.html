@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnage - Access Portal</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-background">
+            <div class="animated-bg"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        
+        <div class="login-box">
+            <div class="login-header">
+                <div class="brand-logo">CARNAGE</div>
+                <div class="brand-subtitle">Gaming Hub Portal</div>
+            </div>
+            
+            <form class="login-form" onsubmit="return handleLogin(event)">
+                <div class="input-group">
+                    <input type="password" id="password-input" placeholder="Enter Access Code" autocomplete="off">
+                    <div class="input-line"></div>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <span class="btn-glow"></span>
+                    ACCESS SYSTEM
+                </button>
+                
+                <div class="error-text" id="error-message"></div>
+            </form>
+            
+            <div class="login-footer">
+                <div class="security-indicator">
+                    <div class="indicator-dot"></div>
+                    Secure Connection
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/auth.js"></script>
+</body>
+</html>
